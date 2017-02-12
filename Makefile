@@ -5,7 +5,7 @@ LEX=flex
 LFLAGS=
 YACC=bison
 YFLAGS=-dv
-CUSTOMFLAGS=-DPATH_ISL="\"/home/kunal/Dropbox/currentTools/barvinok-0.36/iscc \"" -DPRINT_MORE #-DDebug #-DUNINTERPRETED #-DALLOW_SUBS
+CUSTOMFLAGS=-DPATH_ISL="\"/path/barvinok-0.36/iscc \"" -DPRINT_MORE #-DDebug #-DUNINTERPRETED #-DALLOW_SUBS
 #Explanation of the CUSTOMFLAGS
 #PATH_ISL      -- Stores the path to Integer Set Library; NB: Computing the mappings using Omega Calculator is no longer supported
 #PRINT_MORE    -- Shows detailed outputs
