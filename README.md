@@ -39,7 +39,7 @@ Please note the following restrictions on the input C files:
 * Should not have bitwise operators, pointers, user-defined data structures like struct, enum, etc.
 * Should not have while, do..while loops, i.e., only "for" loops are allowed.
 
-If you use this tool, then please cite the following work: 
+If you use this tool, then please cite the following work: <br /> 
 @inproceedings{BanerjeeMS16, <br />
   author    = {Kunal Banerjee and Chittaranjan Mandal and Dipankar Sarkar}, <br />
   title     = {Translation Validation of Loop and Arithmetic Transformations in the Presence of Recurrences}, <br />
