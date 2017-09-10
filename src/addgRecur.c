@@ -73,12 +73,18 @@ int main( int argc, char* argv[] )
 	printf("\n***** Original ADDG *****\n");
 	printADDG(addg1);
 	#endif
+	#ifdef DOTFILE
+	createDotFromAddg(addg1, "addg1.dot");
+	#endif
 
 	#ifdef UNINTERPRETED
 	initializeSubgraphs(0);
 	#endif
 
 	decycleADDG(addg1);
+	#ifdef DOTFILE
+	createDotFromAddg(addg1, "addg1_decycled.dot");
+	#endif
 
 	#ifdef UNINTERPRETED
 	findRecurrenceSubgraphs(0);
@@ -203,12 +209,18 @@ int main( int argc, char* argv[] )
 	printf("\n***** Original ADDG *****\n");
 	printADDG(addg2);
 	#endif
+	#ifdef DOTFILE
+	createDotFromAddg(addg2, "addg2.dot");
+	#endif
 
 	#ifdef UNINTERPRETED
 	initializeSubgraphs(1);
 	#endif
 
 	decycleADDG(addg2);
+	#ifdef DOTFILE
+	createDotFromAddg(addg2, "addg2_decycled.dot");
+	#endif
 
 	#ifdef UNINTERPRETED
 	findRecurrenceSubgraphs(1);

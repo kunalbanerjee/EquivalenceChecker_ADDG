@@ -5,10 +5,11 @@ LEX=flex
 LFLAGS=
 YACC=bison
 YFLAGS=-dv
-CUSTOMFLAGS=-DPATH_ISL="\"/path/barvinok-0.36/iscc \"" -DPRINT_MORE #-DDebug #-DUNINTERPRETED #-DALLOW_SUBS
+CUSTOMFLAGS=-DPATH_ISL="\"/path/barvinok-0.36/iscc \"" -DPRINT_MORE -DDOTFILE #-DDebug #-DUNINTERPRETED #-DALLOW_SUBS
 #Explanation of the CUSTOMFLAGS
 #PATH_ISL      -- Stores the path to Integer Set Library; NB: Computing the mappings using Omega Calculator is no longer supported
 #PRINT_MORE    -- Shows detailed outputs
+#DOTFILE       -- Creates dot files (Graphviz software) for visualization of ADDGs
 #Debug         -- Shows much more detailed outputs which can be beneficial for debugging the code
 #UNINTERPRETED -- Shows substitution of recurrence arrays by uninterpreted functions
 #ALLOW_SUBS    -- Allows substitution of recurrence arrays (to handle cases where the recurrence arrays are named differently in the source and the target programs; this feature requires further update
@@ -17,7 +18,7 @@ CUSTOMFLAGS=-DPATH_ISL="\"/path/barvinok-0.36/iscc \"" -DPRINT_MORE #-DDebug #-D
 all: addg
 
 #creates the executable file
-addg : addgRecur.o computeDataTransformation.o computeSlices.o computeMapping.o findRecurrenceSubgraphs.o createADDG.o createObjectModel.o createNormExpr.o normalization.o iso2011c.tab.o lex.yy.o
+addg : addgRecur.o computeDataTransformation.o computeSlices.o computeMapping.o findRecurrenceSubgraphs.o createADDG.o createObjectModel.o createNormExpr.o normalization.o createDotFromAddg.o iso2011c.tab.o lex.yy.o
 	$(CC) -g -o ./bin/addgEqvChkr ./obj/*.o
 
 
@@ -48,6 +49,9 @@ createNormExpr.o :
 
 normalization.o :
 	$(CC) $(CFLAGS) $(CUSTOMFLAGS) $(INCLUDES) ./src/normalization.c -o ./obj/normalization.o
+
+createDotFromAddg.o :
+	$(CC) $(CFLAGS) $(CUSTOMFLAGS) $(INCLUDES) ./src/createDotFromAddg.c -o ./obj/createDotFromAddg.o
 
 iso2011c.tab.o : parser
 	$(CC) $(CFLAGS) $(INCLUDES) ./src/iso2011c.tab.c -o ./obj/iso2011c.tab.o

@@ -246,4 +246,8 @@ VERTEX* insertUninterpretedFunction( SGRAPH* );
 void introduceSingleUninterpretedFunction( ADDG*, SGRAPH* );
 void introduceUninterpretedFunctions( ADDG*, unsigned int );
 
+
+/*** Functions in creteDotFromAddg ***/
+void createDotFromAddg( ADDG*, char* );
+
 #endif
