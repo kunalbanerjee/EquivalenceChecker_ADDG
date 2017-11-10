@@ -3,6 +3,7 @@
 #### Feb 11, 2016
 
 This tool is a product of our works reported below:
+* [An Equivalence Checking Framework for Array-Intensive Programs, ATVA 2017](https://rd.springer.com/chapter/10.1007%2F978-3-319-68167-2_6)
 * [Translation Validation of Loop and Arithmetic Transformations in the Presence of Recurrences, LCTES 2016](http://dl.acm.org/citation.cfm?doid=2907950.2907954)
 * [Verification of Loop and Arithmetic Transformations of Array-Intensive Behaviors, TCAD 2013](http://ieeexplore.ieee.org/document/6634544/?tp=&arnumber=6634544)
 * [Equivalence Checking of Array-Intensive Programs, ISVLSI 2011](http://ieeexplore.ieee.org/document/5992498/)
