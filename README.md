@@ -1,6 +1,6 @@
 # EquivalenceChecker_ADDG
 ### Kunal Banerjee
-#### Feb 11, 2016
+#### Nov 10, 2017
 
 This tool is a product of our works reported below:
 * [An Equivalence Checking Framework for Array-Intensive Programs, ATVA 2017](https://rd.springer.com/chapter/10.1007%2F978-3-319-68167-2_6)
