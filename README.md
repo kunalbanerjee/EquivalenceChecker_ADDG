@@ -40,7 +40,7 @@ Please note the following restrictions on the input C files:
 * Should not have while, do..while loops, i.e., only "for" loops are allowed.
 
 If you use this tool, then please cite the following work: <br />
-@inproceedings{DBLP:conf/atva/BanerjeeMS17, <br />
+@inproceedings{BanerjeeMS17, <br />
   author    = {Kunal Banerjee and Chittaranjan Mandal and Dipankar Sarkar}, <br />
   title     = {An Equivalence Checking Framework for Array-Intensive Programs}, <br />
   booktitle = {Automated Technology for Verification and Analysis - 15th International Symposium, {ATVA} 2017, Pune, India, October 3-6, 2017, Proceedings}, <br />
