@@ -39,15 +39,15 @@ Please note the following restrictions on the input C files:
 * Should not have bitwise operators, pointers, user-defined data structures like struct, enum, etc.
 * Should not have while, do..while loops, i.e., only "for" loops are allowed.
 
-If you use this tool, then please cite the following work: <br /> 
-@inproceedings{BanerjeeMS16, <br />
+If you use this tool, then please cite the following work: <br />
+@inproceedings{DBLP:conf/atva/BanerjeeMS17, <br />
   author    = {Kunal Banerjee and Chittaranjan Mandal and Dipankar Sarkar}, <br />
-  title     = {Translation Validation of Loop and Arithmetic Transformations in the Presence of Recurrences}, <br />
-  booktitle = {Proceedings of the 17th {ACM} {SIGPLAN/SIGBED} Conference on Languages, Compilers, Tools, and Theory for Embedded Systems, {LCTES} 2016, Santa Barbara, CA, USA, June 13 - 14, 2016}, <br />
-  pages     = {31--40}, <br />
-  year      = {2016}, <br />
-  url       = {http://doi.acm.org/10.1145/2907950.2907954}, <br />
-  doi       = {10.1145/2907950.2907954}, <br />
+  title     = {An Equivalence Checking Framework for Array-Intensive Programs}, <br />
+  booktitle = {Automated Technology for Verification and Analysis - 15th International Symposium, {ATVA} 2017, Pune, India, October 3-6, 2017, Proceedings}, <br />
+  pages     = {84--90}, <br />
+  year      = {2017}, <br />
+  url       = {https://doi.org/10.1007/978-3-319-68167-2_6}, <br />
+  doi       = {10.1007/978-3-319-68167-2_6}, <br />
 }
 
 
