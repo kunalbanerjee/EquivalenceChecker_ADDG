@@ -46,7 +46,7 @@ If you use this tool, then please cite the following work: <br />
   booktitle = {Automated Technology for Verification and Analysis - 15th International Symposium, {ATVA} 2017, Pune, India, October 3-6, 2017, Proceedings}, <br />
   pages     = {84--90}, <br />
   year      = {2017}, <br />
-  url       = {https://doi.org/10.1007/978-3-319-68167-2_6}, <br />
+  url       = {<https://doi.org/10.1007/978-3-319-68167-2_6>}, <br />
   doi       = {10.1007/978-3-319-68167-2_6}, <br />
 }
 
